@@ -1,0 +1,48 @@
+/* Theme Name: Kettu Theme */
+/* Author: Custom */
+/* Description: Personalized theme with custom wallpaper */
+
+/* Background Wallpaper */
+.theme-dark .standard-sidebar-view,
+.theme-dark .container-2ThC68 {
+    background: url('https://i.imgur.com/Wpn1Wev.jpeg') no-repeat center center fixed !important;
+    background-size: cover !important;
+}
+
+/* Dim the background slightly for better readability */
+.theme-dark .container-2ThC68::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Make channels semi-transparent so you can see the wallpaper */
+.theme-dark .channels-3G2pRX {
+    background: rgba(40, 40, 40, 0.7) !important;
+}
+
+/* Semi-transparent message area */
+.theme-dark .messagesWrapper-3lZDCn {
+    background: rgba(30, 30, 30, 0.6) !important;
+}
+
+/* Semi-transparent member list */
+.theme-dark .members-3WRCEx {
+    background: rgba(40, 40, 40, 0.7) !important;
+}
+
+/* Chat background transparency */
+.theme-dark .chat-3bRxxu {
+    background: transparent !important;
+}
+
+/* User info area transparency */
+.theme-dark .panel-2ZFCRb {
+    background: rgba(40, 40, 40, 0.7) !important;
+}
