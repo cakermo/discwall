@@ -1,51 +1,48 @@
 /**
- * @name Kettu Theme
+ * @name Kettu PC Theme
  * @author Custom
  * @version 1.0
- * @description Personalized theme with custom wallpaper
+ * @description Personalized Discord desktop theme with custom wallpaper and transparency effects
+ * @invite 
  */
 
-/* Background Wallpaper */
-.theme-dark .standard-sidebar-view,
-.theme-dark .container-2ThC68 {
+/* ============================================
+   WALLPAPER BACKGROUND
+   ============================================ */
+
+/* Aplicar wallpaper no fundo do aplicativo */
+.theme-dark .appMount-3lHmkl,
+.theme-dark .app-3xd8d0,
+.theme-dark .platform-win .app {
     background: url('https://i.imgur.com/shemIIW.png') no-repeat center center fixed !important;
     background-size: cover !important;
 }
 
-/* Dim the background slightly for better readability */
-.theme-dark .container-2ThC68::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    pointer-events: none;
-    z-index: -1;
+/* ============================================
+   SIDEBAR DE SERVIDORES (Esquerda - Ícones)
+   ============================================ */
+
+/* Container da lista de servidores */
+.theme-dark .scroller-2TZvBN,
+.theme-dark .list-1RPfKq,
+[class*="scrollerDefault"] {
+    background: rgba(40, 40, 40, 0.65) !important;
+    backdrop-filter: blur(12px) !important;
 }
 
-/* Make channels semi-transparent so you can see the wallpaper */
-.theme-dark .channels-3G2pRX {
+/* ============================================
+   SIDEBAR DE CANAIS (Centro - Lista de canais)
+   ============================================ */
+
+/* Container dos canais do servidor */
+.theme-dark .sidebar-2K8pFh,
+.theme-dark [class*="container_"],
+[class*="channelsWrapper"] {
     background: rgba(40, 40, 40, 0.7) !important;
+    backdrop-filter: blur(10px) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 
-/* Semi-transparent message area */
-.theme-dark .messagesWrapper-3lZDCn {
-    background: rgba(30, 30, 30, 0.6) !important;
-}
-
-/* Semi-transparent member list */
-.theme-dark .members-3WRCEx {
-    background: rgba(40, 40, 40, 0.7) !important;
-}
-
-/* Chat background transparency */
-.theme-dark .chat-3bRxxu {
-    background: transparent !important;
-}
-
-/* User info area transparency */
-.theme-dark .panel-2ZFCRb {
-    background: rgba(40, 40, 40, 0.7) !important;
-}
+/* ============================================
+   ÁREA PRINCIPAL DE CHAT
+   ==============
