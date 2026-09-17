@@ -1,48 +1,15 @@
 /**
- * @name Kettu PC Theme
+ * @name Wallpaper Theme
  * @author Custom
  * @version 1.0
- * @description Personalized Discord desktop theme with custom wallpaper and transparency effects
- * @invite 
+ * @description Simple Discord wallpaper theme
  */
 
 /* ============================================
-   WALLPAPER BACKGROUND
+   WALLPAPER BACKGROUND APENAS
    ============================================ */
 
-/* Aplicar wallpaper no fundo do aplicativo */
-.theme-dark .appMount-3lHmkl,
-.theme-dark .app-3xd8d0,
-.theme-dark .platform-win .app {
+.theme-dark .appMount-3lHmkl {
     background: url('https://i.imgur.com/shemIIW.png') no-repeat center center fixed !important;
     background-size: cover !important;
 }
-
-/* ============================================
-   SIDEBAR DE SERVIDORES (Esquerda - Ícones)
-   ============================================ */
-
-/* Container da lista de servidores */
-.theme-dark .scroller-2TZvBN,
-.theme-dark .list-1RPfKq,
-[class*="scrollerDefault"] {
-    background: rgba(40, 40, 40, 0.65) !important;
-    backdrop-filter: blur(12px) !important;
-}
-
-/* ============================================
-   SIDEBAR DE CANAIS (Centro - Lista de canais)
-   ============================================ */
-
-/* Container dos canais do servidor */
-.theme-dark .sidebar-2K8pFh,
-.theme-dark [class*="container_"],
-[class*="channelsWrapper"] {
-    background: rgba(40, 40, 40, 0.7) !important;
-    backdrop-filter: blur(10px) !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
-}
-
-/* ============================================
-   ÁREA PRINCIPAL DE CHAT
-   ==============
